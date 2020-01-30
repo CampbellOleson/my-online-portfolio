@@ -1,0 +1,344 @@
+.cs-nav {
+  position: fixed;
+  height: 90px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: black;
+}
+
+.cs-links {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.cs-links > a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.cs-links > a:hover {
+  font-weight: bold;
+}
+
+.cs-wrapper {
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(192, 192, 192, 1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(192, 192, 192, 1);
+  box-shadow: 0px 3px 5px 0px rgba(192, 192, 192, 1);
+}
+
+.cs-white-container {
+  background-color: white;
+}
+
+.cs-topper {
+  width: inherit;
+  position: relative;
+  height: 500px;
+  padding-top: 80px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(192, 192, 192, 1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(192, 192, 192, 1);
+  box-shadow: 0px 3px 5px 0px rgba(192, 192, 192, 1);
+  overflow: hidden;
+}
+
+.cs-topper-info {
+  width: 450px;
+}
+
+.cs-topper-info > div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  border-top: 1px solid gray;
+}
+
+.cs-topper-info > header {
+  font-size: 50px;
+}
+
+.cs-topper-info > summary {
+  font-size: 20px;
+  line-height: 1.4;
+  padding-top: 25px;
+}
+
+.cs-container {
+  width: inherit;
+  background-color: whitesmoke;
+}
+
+.cs-img {
+  width: 70vw;
+  -webkit-box-shadow: 1px 2px 5px 2px rgba(192, 192, 192, 1);
+  -moz-box-shadow: 1px 2px 5px 2px rgba(192, 192, 192, 1);
+  box-shadow: 1px 2px 5px 2px rgba(192, 192, 192, 1);
+}
+
+.cs-img-medium {
+  width: 50vw;
+  -webkit-box-shadow: 1px 2px 5px 2px rgba(192, 192, 192, 1);
+  -moz-box-shadow: 1px 2px 5px 2px rgba(192, 192, 192, 1);
+  box-shadow: 1px 2px 5px 2px rgba(192, 192, 192, 1);
+}
+
+.cs-img-small {
+  width: 470px;
+  -webkit-box-shadow: 1px 2px 5px 2px rgba(192, 192, 192, 1);
+  -moz-box-shadow: 1px 2px 5px 2px rgba(192, 192, 192, 1);
+  box-shadow: 1px 2px 5px 2px rgba(192, 192, 192, 1);
+}
+
+.cs-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cs-img-margin {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.cs-textblock {
+  width: 50vw;
+  margin-bottom: 40px;
+}
+
+.cs-textblock > header {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.cs-textblock > article {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.cs-img-small-wrapper {
+  width: 70vw;
+  min-width: 950px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cs-bmo {
+  margin-bottom: 0 !important;
+}
+
+.cs-tpf {
+  padding-top: 100px !important;
+}
+
+.cs-tmo {
+  margin-top: 0 !important;
+}
+
+@media all and (min-width: 980px) and (max-width: 1100px) {
+  .cs-topper {
+    height: 390px;
+    padding-top: 80px;
+  }
+
+  .cs-topper-info {
+    width: 400px;
+  }
+
+  .cs-topper-info > header {
+    font-size: 40px;
+  }
+
+  .cs-topper-info > summary {
+    font-size: 18px;
+  }
+
+  .cs-textblock {
+    width: 60vw;
+  }
+
+  .cs-img-medium {
+    width: 60vw;
+  }
+
+  .cs-img {
+    width: 80vw;
+  }
+
+  .cs-tpf {
+    padding-top: 80px !important;
+  }
+
+  .cs-topper-info > div {
+    font-size: 15px;
+  }
+
+  .cs-links {
+    width: 25%;
+  }
+
+  .cs-links > a {
+    font-size: 15px;
+  }
+}
+
+@media all and (min-width: 100px) and (max-width: 980px) {
+  .cs-img {
+    width: 90vw;
+  }
+
+  .cs-img-small {
+    width: 90vw;
+  }
+
+  .cs-img-medium {
+    width: 90vw;
+  }
+
+  .cs-img-small-wrapper {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cs-topper {
+    height: 350px;
+    padding-top: 80px;
+  }
+
+  .cs-topper-info > div {
+    font-size: 12px;
+  }
+
+  .cs-links > a {
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 690px) {
+  .cs-topper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media all and (min-width: 550px) and (max-width: 980px) {
+  .cs-topper-info {
+    width: 300px;
+  }
+
+  .cs-topper-info > header {
+    font-size: 30px;
+  }
+
+  .cs-topper-info > summary {
+    font-size: 16px;
+  }
+
+  .cs-img-small-wrapper {
+    min-width: 500px;
+  }
+
+  .cs-img-small {
+    margin-bottom: 50px;
+  }
+
+  .cs-img-margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .cs-textblock > article {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .cs-textblock > header {
+    font-size: 25px;
+  }
+
+  .cs-textblock {
+    width: 80vw;
+    margin-bottom: 20px;
+  }
+
+  .cs-tpf {
+    padding-top: 50px !important;
+  }
+
+  .cs-links {
+    width: 25%;
+  }
+}
+
+@media all and (min-width: 100px) and (max-width: 550px) {
+  .cs-img-small-wrapper {
+    min-width: 300px;
+  }
+
+  .cs-img-small {
+    margin-bottom: 30px;
+  }
+
+  .cs-img-margin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .cs-textblock > article {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .cs-textblock {
+    width: 90vw;
+    margin-bottom: 15px;
+  }
+
+  .cs-img-medium {
+    width: 90vw;
+  }
+
+  .cs-textblock > header {
+    font-size: 20px;
+  }
+
+  .cs-topper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .cs-topper-info {
+    width: 70vw;
+    height: 300px;
+    padding-top: 90px;
+  }
+
+  .cs-topper-info > header {
+    font-size: 25px;
+  }
+
+  .cs-topper-info > summary {
+    font-size: 15px;
+    padding-top: 12px;
+  }
+
+  .cs-tpf {
+    padding-top: 30px !important;
+  }
+
+  .cs-links {
+    width: 30%;
+  }
+}

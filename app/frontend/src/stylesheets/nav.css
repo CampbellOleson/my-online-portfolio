@@ -1,0 +1,144 @@
+.active-modal {
+  display: flex;
+  transform: translate(0, 100vh);
+}
+
+.anchor-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 50px;
+  text-align: left;
+}
+
+.anchor-button:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
+.anchor-button:focus {
+  outline: none;
+}
+
+.inactive-modal {
+  top: -100vh;
+  transform: translate(0, -100vh);
+}
+
+.floating-name {
+  position: fixed;
+  z-index: 3;
+  top: 34px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.floating-initials {
+  position: fixed;
+  z-index: 3;
+  top: 30px;
+  left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-button {
+  position: fixed;
+  background: none;
+  background-image: url("../assets/hamburger.png");
+  border: 0;
+  background-position: center;
+  background-size: cover;
+  z-index: 4;
+  top: 30px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  transition: all 0.7s ease-in-out;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+}
+
+.nav-button:focus {
+  outline: 0;
+}
+
+.modal {
+  top: -100vh;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  background-color: #90668d;
+  transition: all 0.6s ease-in-out;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  opacity: 0.98;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-modal ul {
+  list-style: none;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-modal > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.x-background {
+  background-image: url("../assets/whiteX.png");
+}
+
+@media all and (min-width: 1250px) and (max-width: 10000px) {
+  .floating-name {
+    display: inline;
+  }
+
+  .floating-initials {
+    display: none;
+  }
+}
+
+@media all and (min-width: 620px) and (max-width: 1250px) {
+  .floating-name {
+    display: none;
+  }
+
+  .floating-initials {
+    display: inline;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 620px) {
+  .floating-name {
+    display: none;
+  }
+
+  .floating-initials {
+    display: inline;
+  }
+}
+
+@media all and (min-width: 100px) and (max-width: 500px) {
+  .floating-name {
+    display: none;
+  }
+
+  .floating-initials {
+    display: none;
+  }
+}
